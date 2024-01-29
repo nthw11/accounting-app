@@ -1,0 +1,68 @@
+{"User": {
+  "id": "number",
+  "firstname": "string",
+  "lastname": "string",
+  "email": "string",
+  "password": "string",
+  "phone": "string",
+  "address": {
+    "street": "string",
+    "city": "string",
+    "state": "string",
+    "zip": "string"
+  },
+  "clients": "array",
+  "projects": "array",
+  "invoices": "array"
+  },
+  "Client": {
+    "id": "number",
+    "name": "string",
+    "address": {
+      "street": "string",
+      "city": "string",
+      "state": "string",
+      "zip": "string"
+    },
+    "phone": "string",
+    "email": "string",
+    "projects": "array",
+    "invoices": "array"
+  },
+  "Project": {
+    "id": "number",
+    "name": "string",
+    "startDate": "string",
+    "endDate": "string",
+    "description": "string",
+    "client": "string",
+    "hours": "number",
+    "rate": "number",
+    "total": "number",
+    "invoices": "array",
+    "notes": "array",
+    "tags": "array"
+  },
+  "Invoice": {
+    "id": "number",
+    "client": "string",
+    "project": "string",
+    "submitDate": "string",
+    "dueDate": "string",
+    "total": "number",
+    "entry": "array",
+    "notes": "array",
+    "tags": "array",
+    "po": "string",
+    "status": "string"
+  },
+  "Entry": {
+    "id": "number",
+    "project": "string",
+    "date": "string",
+    "units": "number",
+    "price": "number",
+    "notes": "string",
+    "tags": "array"
+  }
+}
